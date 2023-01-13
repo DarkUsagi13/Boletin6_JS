@@ -12,7 +12,7 @@ window.addEventListener('load', ()=>{
     //console.log(valores.attributes)
     for (let i = 0; i < valores.attributes.length; i++) {
         let p = document.createElement('p')
-        let attr = document.createTextNode(`${valores.attributes[i].value}`);      
+        let attr = document.createTextNode(`${valores.getAttribute[i]} = ${valores.attributes[i].value}`);      
         p.appendChild(attr)
         div.appendChild(p)
     }
