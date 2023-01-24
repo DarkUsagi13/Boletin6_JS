@@ -11,8 +11,8 @@ window.addEventListener('load', () => {
     body.appendChild(lista);
 
     let json = [
-        {src:"/img/img1.jpg", desc:"descripcion1", specs:["spec11", "spec12",]},
-        {src:"/img/img2.jpg", desc:"descripcion2", specs:["spec21", "spec22",]}
+        { src: "https://picsum.photos/id/237/400/200", desc: "descripcion1", specs: ["spec11", "spec12",] },
+        { src: "https://picsum.photos/id/237/400/200", desc: "descripcion2", specs: ["spec21", "spec22",] }
     ]
 
     for (let i of json) {
@@ -35,6 +35,16 @@ window.addEventListener('load', () => {
         }
         lista.appendChild(li);
     }
-    
+
+    img = document.getElementsByTagName('img');
+
+    for (let i = 0; i < img.length; i++) {
+        img[i].addEventListener('click', () => {
+            child = img[i].parentNode.firstChild.nodeName.toLowerCase();
+            if (child == "img") {
+                img[i].style.display = 'none';
+            }
+        })
+    }
 
 });
