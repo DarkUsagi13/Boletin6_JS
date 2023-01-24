@@ -24,16 +24,10 @@ window.addEventListener('load', () => {
             }
         }
 
-        
-
         let ventana = window.open("", "", width = 200, height = 300)
         let body = ventana.document.getElementsByTagName('body')[0]
         body.appendChild(datos)
 
-        
-
     })
-
-
 
 })
