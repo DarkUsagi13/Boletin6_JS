@@ -27,6 +27,8 @@ window.addEventListener('load', () => {
         let lista2 = document.createElement('ul');
         li.appendChild(lista2)
 
+       // img.addEventListener('click', () => { })
+
         for (let j of json) {
             if (i.desc === j.desc) {
                 let li2 = document.createElement('li');
@@ -34,17 +36,18 @@ window.addEventListener('load', () => {
             }
         }
         lista.appendChild(li);
-    }
 
-    img = document.getElementsByTagName('img');
-
-    for (let i = 0; i < img.length; i++) {
-        img[i].addEventListener('click', () => {
-            child = img[i].parentNode.firstChild.nodeName.toLowerCase();
-            if (child == "img") {
-                img[i].style.display = 'none';
+        img.addEventListener('click', (ev) => {
+            let hermanos = ev.currentTarget.parentNode.children
+            for (let hermano of hermanos) {
+                console.log(hermano)
+           
             }
+            //console.log(hermanos)
         })
+
     }
+
+   // img = document.getElementsByTagName('img');
 
 });

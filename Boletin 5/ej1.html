@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <script src="./ej2.js"></script>
+</head>
+<body>
+    <form id="form">
+        <div>
+            <label for="">Nombre:</label>
+            <input type="text" id="nombre" value="Héctor">
+            <input type="text" id="apellidos" value="Martínez Cornejo">
+        </div>
+        <br>
+        <div>
+            <label for="nombre_usuario">Nombre de usuario:</label>
+            <input type="text" id="nombre_usuario" value="hmartinez">
+        </div>
+        <br>
+        <div>
+            <label for="pass1">Contraseña:</label>
+            <input type="password" id="pass1" value="Hmartinez-123">
+        </div>
+        <br>
+        <div>
+            <label for="pass2">Confirmar contraseña:</label>
+            <input type="password" id="pass2" value="Hmartinez-123">
+        </div>
+        <br>
+        <div>
+            <label for="">Fecha de nacimiento:</label>
+            <input type="text" id="dia">
+            <select name="mes" id="meses">
+                <option value="Enero">Enero</option>
+                <option value="Febrero" selected>Febrero</option>
+                <option value="Marzo">Marzo</option>
+                <option value="Abril">Abril</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Junio">Junio</option>
+                <option value="Julio">Julio</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Septiembre">Septiembre</option>
+                <option value="Octubre">Octubre</option>
+                <option value="Nombre">Noviembre</option>
+                <option value="Diciembre">Diciembre</option>
+            </select>
+            <input type="text" id="anio">
+            <input type="text" id="edad" disabled>
+        </div>
+        <br>
+        <div>
+            <label for="">Sexo:</label>
+            <select name="" id="sexo">
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="">Teléfono móvil:</label>
+            <input type="tel" id="telefono" value="695106258">
+        </div>
+        <br>
+        <div>
+            <label for="">Tu dirección de correo electrónico actual</label>
+            <input type="email" value="hmartinez@gmail.com">
+        </div>
+        <br>
+        <div>
+            <input id="enviar" type="submit" value="Enviar">
+        </div>
+    </form>
+    <div id="datos">
+
+    </div>
+</body>
+</html>
