@@ -27,8 +27,6 @@ window.addEventListener('load', () => {
         let lista2 = document.createElement('ul');
         li.appendChild(lista2)
 
-       // img.addEventListener('click', () => { })
-
         for (let j of json) {
             if (i.desc === j.desc) {
                 let li2 = document.createElement('li');
@@ -43,11 +41,6 @@ window.addEventListener('load', () => {
                 console.log(hermano)
            
             }
-            //console.log(hermanos)
         })
-
     }
-
-   // img = document.getElementsByTagName('img');
-
 });
