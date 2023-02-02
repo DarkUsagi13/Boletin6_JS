@@ -8,21 +8,39 @@
     <script src="./ej4.js"></script>
 </head>
 <body>
-    <form>
+    <form id="form">
         <div>
             <p>¿Qué animal es el rey de la selva?</p>
                 <div>
-                    <input id="tigre" type="radio" name="pregunta2" value="tigre">
+                    <input id="tigre" type="radio" name="pregunta1" value="tigre">
                     <label for="tigre">Tigre</label>
-                    <input id="leon" type="radio" name="pregunta2" value="leon">
+                    <input id="leon" type="radio" name="pregunta1" value="leon">
                     <label for="leon">León</label>
-                    <input id="gorila" type="radio" name="pregunta2" value="gorila">
+                    <input id="gorila" type="radio" name="pregunta1" value="gorila">
                     <label for="gorila">Gorila</label>
-                    <input id="oso" type="radio" name="pregunta2" value="oso">
+                    <input id="oso" type="radio" name="pregunta1" value="oso">
                     <label for="oso">Oso</label>
                 </div>
         </div>
-        <div></div>
+        <br>
+        <div id="r1"></div>
+        <div>
+            <p>¿Cúal es el máximo depredador de los mares?</p>
+                <div>
+                    <input id="ballena" type="radio" name="pregunta2" value="ballena">
+                    <label for="ballena">Ballena</label>
+                    <input id="delfin" type="radio" name="pregunta2" value="delfin">
+                    <label for="delfin">Delfín</label>
+                    <input id="orca" type="radio" name="pregunta2" value="orca">
+                    <label for="orca">Orca</label>
+                    <input id="tiburon" type="radio" name="pregunta2" value="tiburon">
+                    <label for="tiburon">Tiburón</label>
+                </div>
+        </div>
+        <br>
+        <div id="r2"></div>
+        <br>    
+        <input id="enviar" type="button" value="Enviar">
     </form>
 </body>
 </html>
